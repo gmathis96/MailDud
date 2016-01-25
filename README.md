@@ -16,6 +16,7 @@ Quirk 2: This is using a framework built for another, much bigger system (A Soci
 Quirk 3: Scalability, this system cannot scale very well at the moment -- horizontally of coarse.
 
 #MySQL Create Table Command
+```MySQL
 CREATE TABLE IF NOT EXISTS messages (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `to` varchar(255) NOT NULL,
@@ -25,3 +26,4 @@ CREATE TABLE IF NOT EXISTS messages (
   `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+```
